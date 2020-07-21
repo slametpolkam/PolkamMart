@@ -18,7 +18,10 @@ public class Koneksi {
     public static Connection connect;
     public static Statement statemen;
     
-  
+  public static void main(String []args){
+    Koneksi konek=new Koneksi();
+    System.out.println(konek.konfigurasi());
+  }
     public String konfigurasi() {
         String Messege;
         try{

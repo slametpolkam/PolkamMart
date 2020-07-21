@@ -282,7 +282,7 @@ JOptionPane.showMessageDialog(null, err.getMessage() );
             int selectedRowIndex=tabelBarang.getSelectedRow();
             
                 if(selectedRowIndex<-1){
-                    JOptionPane.showMessageDialog(null, "Silahkan Pilih Data Terlebih Dahulu");
+                    JOptionPane.showMessageDialog(this, "Silahkan Pilih Data Terlebih Dahulu");
                 }else{
                     String[]value = new String[5];
                     for(int i=1;i<value.length;i++){
@@ -313,6 +313,7 @@ JOptionPane.showMessageDialog(null, err.getMessage() );
                 namabarang.setText("");
                 harga.setText("");
                 stok.setText("");
+                ubah.setText("Ambil Data");
                 AmbilData();
             } catch (SQLException ex) {
                 Logger.getLogger(TambahPegawai.class.getName()).log(Level.SEVERE, null, ex);
